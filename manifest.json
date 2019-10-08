@@ -1,0 +1,17 @@
+{
+    "name": "英語1Bb 単語帳",
+    "short_name": "英単語",
+    "background_color": "#00ced1",
+    "theme_color": "#00ced1",
+    "icons": [{
+        "src": "./icon-256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      },{
+        "src": "./icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }],
+    "start_url": "/",
+    "display": "standalone"
+  }
