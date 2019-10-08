@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Unit7  Manga Mania </title>
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./js/main.js"></script>
+
+<h1>Unit 7&nbsp;&nbsp;&nbsp;Manga Mania </h1>
+
+
+<a type=“button” a href="#" class="btn-flat-border" onclick="location.href='Index.html'">Topページ
+</a>
+
+<a type=“button” a href="#" class="btn-flat-border" onclick="offradio();">一括日本語
+</a>
+
+<p>
+    <div style="margin-bottom:100px"></div>
+</p>
+<form name="sample">
+<div class="tab-wrap">
+    <input id="TAB-01" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-01">英語</label>
+    <div class="tab-content">
+        browsed through ...
+    </div>
+    <input id="TAB-02" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-02">日本語</label>
+    <div class="tab-content">
+        拾い読みする
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-03" type="radio" name="TAB1" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-03">英語</label>
+    <div class="tab-content">
+        was absorbed in … 
+    </div>
+    <input id="TAB-04" type="radio" name="TAB1" class="tab-switch" /><label class="tab-label" for="TAB-04">日本語</label>
+    <div class="tab-content">
+        …に夢中になる
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-05" type="radio" name="TAB2" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-05">英語</label>
+    <div class="tab-content">
+        Is it true that …?
+    </div>
+    <input id="TAB-06" type="radio" name="TAB2" class="tab-switch" /><label class="tab-label" for="TAB-06">日本語</label>
+    <div class="tab-content">
+        …は本当ですか。 
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-07" type="radio" name="TAB3" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-07">英語</label>
+    <div class="tab-content">
+        or
+    </div>
+    <input id="TAB-08" type="radio" name="TAB3" class="tab-switch" /><label class="tab-label" for="TAB-08">日本語</label>
+    <div class="tab-content">
+        つまり
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-09" type="radio" name="TAB4" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-09">英語</label>
+    <div class="tab-content">
+        enjoy
+    </div>
+    <input id="TAB-10" type="radio" name="TAB4" class="tab-switch" /><label class="tab-label" for="TAB-10">日本語</label>
+    <div class="tab-content">
+        持っている
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-11" type="radio" name="TAB5" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-11">英語</label>
+    <div class="tab-content">
+        occupy
+    </div>
+    <input id="TAB-12" type="radio" name="TAB5" class="tab-switch" /><label class="tab-label" for="TAB-12">日本語</label>
+    <div class="tab-content">
+        占める
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-13" type="radio" name="TAB6" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-13">英語</label>
+    <div class="tab-content">
+        substantial
+    </div>
+    <input id="TAB-14" type="radio" name="TAB6" class="tab-switch" /><label class="tab-label" for="TAB-14">日本語</label>
+    <div class="tab-content">
+        （数量が）相当な
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-15" type="radio" name="TAB7" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-15">英語</label>
+    <div class="tab-content">
+        portion
+    </div>
+    <input id="TAB-16" type="radio" name="TAB7" class="tab-switch" /><label class="tab-label" for="TAB-16">日本語</label>
+    <div class="tab-content">
+        部分
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-17" type="radio" name="TAB8" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-17">英語</label>
+    <div class="tab-content">
+        published material
+    </div>
+    <input id="TAB-18" type="radio" name="TAB8" class="tab-switch" /><label class="tab-label" for="TAB-18">日本語</label>
+    <div class="tab-content">
+        出版物
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-19" type="radio" name="TAB9" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-19">英語</label>
+    <div class="tab-content">
+        accounting for …
+    </div>
+    <input id="TAB-20" type="radio" name="TAB9" class="tab-switch" /><label class="tab-label" for="TAB-20">日本語</label>
+    <div class="tab-content">
+        …の(額・割合)を占める
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-21" type="radio" name="TAB10" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-21">英語</label>
+    <div class="tab-content">
+        translate into …
+    </div>
+    <input id="TAB-22" type="radio" name="TAB10" class="tab-switch" /><label class="tab-label" for="TAB-22">日本語</label>
+    <div class="tab-content">
+        …の結果に至る
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-23" type="radio" name="TAB11" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-23">英語</label>
+    <div class="tab-content">
+        in sales
+    </div>
+    <input id="TAB-24" type="radio" name="TAB11" class="tab-switch" /><label class="tab-label" for="TAB-24">日本語</label>
+    <div class="tab-content">
+        売り上げで
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-25" type="radio" name="TAB12" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-25">英語</label>
+    <div class="tab-content">
+        commands
+    </div>
+    <input id="TAB-26" type="radio" name="TAB12" class="tab-switch" /><label class="tab-label" for="TAB-26">日本語</label>
+    <div class="tab-content">
+        …を占める
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-27" type="radio" name="TAB13" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-27">英語</label>
+    <div class="tab-content">
+        market share
+    </div>
+    <input id="TAB-28" type="radio" name="TAB13" class="tab-switch" /><label class="tab-label" for="TAB-28">日本語</label>
+    <div class="tab-content">
+        市場占有率
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-29" type="radio" name="TAB14" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-29">英語</label>
+    <div class="tab-content">
+        has become…
+    </div>
+    <input id="TAB-30" type="radio" name="TAB14" class="tab-switch" /><label class="tab-label" for="TAB-30">日本語</label>
+    <div class="tab-content">
+        …になった（現在完了） 
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-31" type="radio" name="TAB15" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-31">英語</label>
+    <div class="tab-content">
+        exporter
+    </div>
+    <input id="TAB-32" type="radio" name="TAB15" class="tab-switch" /><label class="tab-label" for="TAB-32">日本語</label>
+    <div class="tab-content">
+        輸出国
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-33" type="radio" name="TAB16" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-33">英語</label>
+    <div class="tab-content">
+        pop culture
+    </div>
+    <input id="TAB-34" type="radio" name="TAB16" class="tab-switch" /><label class="tab-label" for="TAB-34">日本語</label>
+    <div class="tab-content">
+        大衆文化
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-35" type="radio" name="TAB17" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-35">英語</label>
+    <div class="tab-content">
+        available
+    </div>
+    <input id="TAB-36" type="radio" name="TAB17" class="tab-switch" /><label class="tab-label" for="TAB-36">日本語</label>
+    <div class="tab-content">
+        手に入る
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-37" type="radio" name="TAB18" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-37">英語</label>
+    <div class="tab-content">
+        In addition
+    </div>
+    <input id="TAB-38" type="radio" name="TAB18" class="tab-switch" /><label class="tab-label" for="TAB-38">日本語</label>
+    <div class="tab-content">
+        さらに
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-39" type="radio" name="TAB19" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-39">英語</label>
+    <div class="tab-content">
+        maniacs
+    </div>
+    <input id="TAB-40" type="radio" name="TAB19" class="tab-switch" /><label class="tab-label" for="TAB-40">日本語</label>
+    <div class="tab-content">
+        マニア
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-41" type="radio" name="TAB20" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-41">英語</label>
+    <div class="tab-content">
+        animation versions
+    </div>
+    <input id="TAB-42" type="radio" name="TAB20" class="tab-switch" /><label class="tab-label" for="TAB-42">日本語</label>
+    <div class="tab-content">
+        アニメ版
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-43" type="radio" name="TAB21" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-43">英語</label>
+    <div class="tab-content">
+        simply by …
+    </div>
+    <input id="TAB-44" type="radio" name="TAB21" class="tab-switch" /><label class="tab-label" for="TAB-44">日本語</label>
+    <div class="tab-content">
+        単に…によって
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-45" type="radio" name="TAB22" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-45">英語</label>
+    <div class="tab-content">
+        turning on…
+    </div>
+    <input id="TAB-46" type="radio" name="TAB22" class="tab-switch" /><label class="tab-label" for="TAB-46">日本語</label>
+    <div class="tab-content">
+        …に向かう
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-47" type="radio" name="TAB23" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-47">英語</label>
+    <div class="tab-content">
+        Some 20 different cartoons from
+    </div>
+    <input id="TAB-48" type="radio" name="TAB23" class="tab-switch" /><label class="tab-label" for="TAB-48">日本語</label>
+    <div class="tab-content">
+        およそ 20 の様々な
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-49" type="radio" name="TAB24" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-49">英語</label>
+    <div class="tab-content">
+        differ from…
+    </div>
+    <input id="TAB-50" type="radio" name="TAB24" class="tab-switch" /><label class="tab-label" for="TAB-50">日本語</label>
+    <div class="tab-content">
+        …と異なる
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-51" type="radio" name="TAB25" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-51">英語</label>
+    <div class="tab-content">
+        in several ways
+    </div>
+    <input id="TAB-52" type="radio" name="TAB25" class="tab-switch" /><label class="tab-label" for="TAB-52">日本語</label>
+    <div class="tab-content">
+        いくつかの点で
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-53" type="radio" name="TAB26" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-53">英語</label>
+    <div class="tab-content">
+        length
+    </div>
+    <input id="TAB-54" type="radio" name="TAB26" class="tab-switch" /><label class="tab-label" for="TAB-54">日本語</label>
+    <div class="tab-content">
+        長さ
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-55" type="radio" name="TAB27" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-55">英語</label>
+    <div class="tab-content">
+        tend to be…
+    </div>
+    <input id="TAB-56" type="radio" name="TAB27" class="tab-switch" /><label class="tab-label" for="TAB-56">日本語</label>
+    <div class="tab-content">
+        …である傾向がある
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-57" type="radio" name="TAB28" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-57">英語</label>
+    <div class="tab-content">
+        while…
+    </div>
+    <input id="TAB-58" type="radio" name="TAB28" class="tab-switch" /><label class="tab-label" for="TAB-58">日本語</label>
+    <div class="tab-content">
+        一方（接続詞）
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-59" type="radio" name="TAB29" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-59">英語</label>
+    <div class="tab-content">
+        several hundred
+    </div>
+    <input id="TAB-60" type="radio" name="TAB29" class="tab-switch" /><label class="tab-label" for="TAB-60">日本語</label>
+    <div class="tab-content">
+        数百の
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-61" type="radio" name="TAB30" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-61">英語</label>
+    <div class="tab-content">
+        long
+    </div>
+    <input id="TAB-62" type="radio" name="TAB30" class="tab-switch" /><label class="tab-label" for="TAB-62">日本語</label>
+    <div class="tab-content">
+        長さが（副詞）
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-63" type="radio" name="TAB31" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-63">英語</label>
+    <div class="tab-content">
+        complex characters
+    </div>
+    <input id="TAB-64" type="radio" name="TAB31" class="tab-switch" /><label class="tab-label" for="TAB-64">日本語</label>
+    <div class="tab-content">
+        複合的登場人物
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-65" type="radio" name="TAB32" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-65">英語</label>
+    <div class="tab-content">
+        that…
+    </div>
+    <input id="TAB-66" type="radio" name="TAB32" class="tab-switch" /><label class="tab-label" for="TAB-66">日本語</label>
+    <div class="tab-content">
+        （関係代名詞）
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-67" type="radio" name="TAB33" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-67">英語</label>
+    <div class="tab-content">
+        are suited to
+    </div>
+    <input id="TAB-68" type="radio" name="TAB33" class="tab-switch" /><label class="tab-label" for="TAB-68">日本語</label>
+    <div class="tab-content">
+        …に合う、…に向く
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-69" type="radio" name="TAB34" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-69">英語</label>
+    <div class="tab-content">
+        superheroes
+    </div>
+    <input id="TAB-70" type="radio" name="TAB34" class="tab-switch" /><label class="tab-label" for="TAB-70">日本語</label>
+    <div class="tab-content">
+        スーパーヒーロー
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-71" type="radio" name="TAB35" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-71">英語</label>
+    <div class="tab-content">
+        win out over… 
+    </div>
+    <input id="TAB-72" type="radio" name="TAB35" class="tab-switch" /><label class="tab-label" for="TAB-72">日本語</label>
+    <div class="tab-content">
+        …に勝ち抜く
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-73" type="radio" name="TAB36" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-73">英語</label>
+    <div class="tab-content">
+        evil enemies
+    </div>
+    <input id="TAB-74" type="radio" name="TAB36" class="tab-switch" /><label class="tab-label" for="TAB-74">日本語</label>
+    <div class="tab-content">
+        邪悪な敵
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-75" type="radio" name="TAB37" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-75">英語</label>
+    <div class="tab-content">
+        While…
+    </div>
+    <input id="TAB-76" type="radio" name="TAB37" class="tab-switch" /><label class="tab-label" for="TAB-76">日本語</label>
+    <div class="tab-content">
+        …だけれども
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-77" type="radio" name="TAB38" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-77">英語</label>
+    <div class="tab-content">
+        (they are) popular
+    </div>
+    <input id="TAB-78" type="radio" name="TAB38" class="tab-switch" /><label class="tab-label" for="TAB-78">日本語</label>
+    <div class="tab-content">
+        人気がある
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-79" type="radio" name="TAB39" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-79">英語</label>
+    <div class="tab-content">
+        keep their attention
+    </div>
+    <input id="TAB-80" type="radio" name="TAB39" class="tab-switch" /><label class="tab-label" for="TAB-80">日本語</label>
+    <div class="tab-content">
+        関心を維持する
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-81" type="radio" name="TAB40" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-81">英語</label>
+    <div class="tab-content">
+        as…
+    </div>
+    <input id="TAB-82" type="radio" name="TAB40" class="tab-switch" /><label class="tab-label" for="TAB-82">日本語</label>
+    <div class="tab-content">
+        …したとき
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-83" type="radio" name="TAB41" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-83">英語</label>
+    <div class="tab-content">
+        cultural perspective
+    </div>
+    <input id="TAB-84" type="radio" name="TAB41" class="tab-switch" /><label class="tab-label" for="TAB-84">日本語</label>
+    <div class="tab-content">
+        文化的観点
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-85" type="radio" name="TAB42" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-85">英語</label>
+    <div class="tab-content">
+        In contrast to…
+    </div>
+    <input id="TAB-86" type="radio" name="TAB42" class="tab-switch" /><label class="tab-label" for="TAB-86">日本語</label>
+    <div class="tab-content">
+        …と対照的に
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-87" type="radio" name="TAB43" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-87">英語</label>
+    <div class="tab-content">
+        faced…
+    </div>
+    <input id="TAB-88" type="radio" name="TAB43" class="tab-switch" /><label class="tab-label" for="TAB-88">日本語</label>
+    <div class="tab-content">
+        …に直面した
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-89" type="radio" name="TAB44" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-89">英語</label>
+    <div class="tab-content">
+        strict regulations
+    </div>
+    <input id="TAB-90" type="radio" name="TAB44" class="tab-switch" /><label class="tab-label" for="TAB-90">日本語</label>
+    <div class="tab-content">
+        きびしい規制
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-91" type="radio" name="TAB45" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-91">英語</label>
+    <div class="tab-content">
+        that…
+    </div>
+    <input id="TAB-92" type="radio" name="TAB45" class="tab-switch" /><label class="tab-label" for="TAB-92">日本語</label>
+    <div class="tab-content">
+        （関係代名詞）
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-93" type="radio" name="TAB46" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-93">英語</label>
+    <div class="tab-content">
+        resulted in…
+    </div>
+    <input id="TAB-94" type="radio" name="TAB46" class="tab-switch" /><label class="tab-label" for="TAB-94">日本語</label>
+    <div class="tab-content">
+        結果…になる
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-95" type="radio" name="TAB47" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-95">英語</label>
+    <div class="tab-content">
+        freedom of expression
+    </div>
+    <input id="TAB-96" type="radio" name="TAB47" class="tab-switch" /><label class="tab-label" for="TAB-96">日本語</label>
+    <div class="tab-content">
+        表現の自由
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-97" type="radio" name="TAB48" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-97">英語</label>
+    <div class="tab-content">
+        Evangelion
+    </div>
+    <input id="TAB-98" type="radio" name="TAB48" class="tab-switch" /><label class="tab-label" for="TAB-98">日本語</label>
+    <div class="tab-content">
+        エバンゲリオン(福音書）
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-99" type="radio" name="TAB49" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-99">英語</label>
+    <div class="tab-content">
+        various
+    </div>
+    <input id="TAB-100" type="radio" name="TAB49" class="tab-switch" /><label class="tab-label" for="TAB-100">日本語</label>
+    <div class="tab-content">
+        様々な
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-101" type="radio" name="TAB50" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-101">英語</label>
+    <div class="tab-content">
+        amount to …
+    </div>
+    <input id="TAB-102" type="radio" name="TAB50" class="tab-switch" /><label class="tab-label" for="TAB-102">日本語</label>
+    <div class="tab-content">
+        量が…に達する
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-103" type="radio" name="TAB51" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-103">英語</label>
+    <div class="tab-content">
+        growth period
+    </div>
+    <input id="TAB-104" type="radio" name="TAB51" class="tab-switch" /><label class="tab-label" for="TAB-104">日本語</label>
+    <div class="tab-content">
+        成長期
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-105" type="radio" name="TAB52" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-105">英語</label>
+    <div class="tab-content">
+        lenient approach
+    </div>
+    <input id="TAB-106" type="radio" name="TAB52" class="tab-switch" /><label class="tab-label" for="TAB-106">日本語</label>
+    <div class="tab-content">
+        寛大なやり方
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-107" type="radio" name="TAB53" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-107">英語</label>
+    <div class="tab-content">
+        allowing…
+    </div>
+    <input id="TAB-108" type="radio" name="TAB53" class="tab-switch" /><label class="tab-label" for="TAB-108">日本語</label>
+    <div class="tab-content">
+        許す、認める
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-109" type="radio" name="TAB54" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-109">英語</label>
+    <div class="tab-content">
+        writing system
+    </div>
+    <input id="TAB-110" type="radio" name="TAB54" class="tab-switch" /><label class="tab-label" for="TAB-110">日本語</label>
+    <div class="tab-content">
+        筆記法
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-111" type="radio" name="TAB55" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-111">英語</label>
+    <div class="tab-content">
+        pictographs
+    </div>
+    <input id="TAB-112" type="radio" name="TAB55" class="tab-switch" /><label class="tab-label" for="TAB-112">日本語</label>
+    <div class="tab-content">
+        象形文字
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-113" type="radio" name="TAB56" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-113">英語</label>
+    <div class="tab-content">
+        syllabic writing
+    </div>
+    <input id="TAB-114" type="radio" name="TAB56" class="tab-switch" /><label class="tab-label" for="TAB-114">日本語</label>
+    <div class="tab-content">
+        音標筆記
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-115" type="radio" name="TAB57" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-115">英語</label>
+    <div class="tab-content">
+        is likely to have played a role…
+    </div>
+    <input id="TAB-116" type="radio" name="TAB57" class="tab-switch" /><label class="tab-label" for="TAB-116">日本語</label>
+    <div class="tab-content">
+        一役演じたようだ
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-117" type="radio" name="TAB58" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-117">英語</label>
+    <div class="tab-content">
+        role
+    </div>
+    <input id="TAB-118" type="radio" name="TAB58" class="tab-switch" /><label class="tab-label" for="TAB-118">日本語</label>
+    <div class="tab-content">
+        役割
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-119" type="radio" name="TAB59" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-119">英語</label>
+    <div class="tab-content">
+        are criticized
+    </div>
+    <input id="TAB-120" type="radio" name="TAB59" class="tab-switch" /><label class="tab-label" for="TAB-120">日本語</label>
+    <div class="tab-content">
+        批判される
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-121" type="radio" name="TAB60" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-121">英語</label>
+    <div class="tab-content">
+        lacking creativity and…
+    </div>
+    <input id="TAB-122" type="radio" name="TAB60" class="tab-switch" /><label class="tab-label" for="TAB-122">日本語</label>
+    <div class="tab-content">
+        想像力の欠如
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-123" type="radio" name="TAB61" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-123">英語</label>
+    <div class="tab-content">
+        ironical
+    </div>
+    <input id="TAB-124" type="radio" name="TAB61" class="tab-switch" /><label class="tab-label" for="TAB-124">日本語</label>
+    <div class="tab-content">
+        皮肉にも
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-125" type="radio" name="TAB62" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-125">英語</label>
+    <div class="tab-content">
+        uniqueness
+    </div>
+    <input id="TAB-126" type="radio" name="TAB62" class="tab-switch" /><label class="tab-label" for="TAB-126">日本語</label>
+    <div class="tab-content">
+        独創性
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-127" type="radio" name="TAB63" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-127">英語</label>
+    <div class="tab-content">
+        what is selling oversea
+    </div>
+    <input id="TAB-128" type="radio" name="TAB63" class="tab-switch" /><label class="tab-label" for="TAB-128">日本語</label>
+    <div class="tab-content">
+        海外で売れるもの
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-129" type="radio" name="TAB64" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-129">英語</label>
+    <div class="tab-content">
+        entertain themselves
+    </div>
+    <input id="TAB-130" type="radio" name="TAB64" class="tab-switch" /><label class="tab-label" for="TAB-130">日本語</label>
+    <div class="tab-content">
+        自分で楽しむ
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-131" type="radio" name="TAB65" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-131">英語</label>
+    <div class="tab-content">
+        is now fascinating…
+    </div>
+    <input id="TAB-132" type="radio" name="TAB65" class="tab-switch" /><label class="tab-label" for="TAB-132">日本語</label>
+    <div class="tab-content">
+        …を魅了している
+    </div>
+</div>
+</form>
+<p>
+    <div style="margin-bottom:180px"></div>
+</p>
+
+<div id="page_top"><a href="#"></a></div>

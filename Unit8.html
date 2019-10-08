@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Unit8  What’s in a Word</title>
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./js/main.js"></script>
+
+<h1>Unit 8&nbsp;&nbsp;&nbsp;What’s in a Word</h1>
+
+
+<a type=“button” a href="#" class="btn-flat-border" onclick="location.href='Index.html'">Topページ
+</a>
+
+<a type=“button” a href="#" class="btn-flat-border" onclick="offradio();">一括日本語
+</a>
+
+<p>
+    <div style="margin-bottom:100px"></div>
+</p>
+<form name="sample">
+<div class="tab-wrap">
+    <input id="TAB-01" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-01">英語</label>
+    <div class="tab-content">
+        コンテンツ 1
+    </div>
+    <input id="TAB-02" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-02">日本語</label>
+    <div class="tab-content">
+        コンテンツ 2
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-03" type="radio" name="TAB1" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-03">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-04" type="radio" name="TAB1" class="tab-switch" /><label class="tab-label" for="TAB-04">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-05" type="radio" name="TAB2" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-05">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-06" type="radio" name="TAB2" class="tab-switch" /><label class="tab-label" for="TAB-06">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-07" type="radio" name="TAB3" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-07">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-08" type="radio" name="TAB3" class="tab-switch" /><label class="tab-label" for="TAB-08">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-09" type="radio" name="TAB4" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-09">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-10" type="radio" name="TAB4" class="tab-switch" /><label class="tab-label" for="TAB-10">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-11" type="radio" name="TAB5" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-11">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-12" type="radio" name="TAB5" class="tab-switch" /><label class="tab-label" for="TAB-12">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-13" type="radio" name="TAB6" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-13">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-14" type="radio" name="TAB6" class="tab-switch" /><label class="tab-label" for="TAB-14">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-15" type="radio" name="TAB7" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-15">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-16" type="radio" name="TAB7" class="tab-switch" /><label class="tab-label" for="TAB-16">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-17" type="radio" name="TAB8" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-17">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-18" type="radio" name="TAB8" class="tab-switch" /><label class="tab-label" for="TAB-18">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-19" type="radio" name="TAB9" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-19">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-20" type="radio" name="TAB9" class="tab-switch" /><label class="tab-label" for="TAB-20">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-21" type="radio" name="TAB10" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-21">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-22" type="radio" name="TAB10" class="tab-switch" /><label class="tab-label" for="TAB-22">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-23" type="radio" name="TAB11" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-23">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-24" type="radio" name="TAB11" class="tab-switch" /><label class="tab-label" for="TAB-24">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-25" type="radio" name="TAB12" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-25">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-26" type="radio" name="TAB12" class="tab-switch" /><label class="tab-label" for="TAB-26">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-27" type="radio" name="TAB13" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-27">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-28" type="radio" name="TAB13" class="tab-switch" /><label class="tab-label" for="TAB-28">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-29" type="radio" name="TAB14" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-29">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-30" type="radio" name="TAB14" class="tab-switch" /><label class="tab-label" for="TAB-30">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-31" type="radio" name="TAB15" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-31">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-32" type="radio" name="TAB15" class="tab-switch" /><label class="tab-label" for="TAB-32">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-33" type="radio" name="TAB16" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-33">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-34" type="radio" name="TAB16" class="tab-switch" /><label class="tab-label" for="TAB-34">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-35" type="radio" name="TAB17" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-35">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-36" type="radio" name="TAB17" class="tab-switch" /><label class="tab-label" for="TAB-36">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-37" type="radio" name="TAB18" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-37">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-38" type="radio" name="TAB18" class="tab-switch" /><label class="tab-label" for="TAB-38">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-39" type="radio" name="TAB19" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-39">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-40" type="radio" name="TAB19" class="tab-switch" /><label class="tab-label" for="TAB-40">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-41" type="radio" name="TAB20" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-41">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-42" type="radio" name="TAB20" class="tab-switch" /><label class="tab-label" for="TAB-42">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-43" type="radio" name="TAB21" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-43">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-44" type="radio" name="TAB21" class="tab-switch" /><label class="tab-label" for="TAB-44">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-45" type="radio" name="TAB22" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-45">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-46" type="radio" name="TAB22" class="tab-switch" /><label class="tab-label" for="TAB-46">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-47" type="radio" name="TAB23" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-47">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-48" type="radio" name="TAB23" class="tab-switch" /><label class="tab-label" for="TAB-48">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-49" type="radio" name="TAB24" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-49">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-50" type="radio" name="TAB24" class="tab-switch" /><label class="tab-label" for="TAB-50">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-51" type="radio" name="TAB25" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-51">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-52" type="radio" name="TAB25" class="tab-switch" /><label class="tab-label" for="TAB-52">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-53" type="radio" name="TAB26" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-53">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-54" type="radio" name="TAB26" class="tab-switch" /><label class="tab-label" for="TAB-54">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-55" type="radio" name="TAB27" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-55">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-56" type="radio" name="TAB27" class="tab-switch" /><label class="tab-label" for="TAB-56">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-57" type="radio" name="TAB28" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-57">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-58" type="radio" name="TAB28" class="tab-switch" /><label class="tab-label" for="TAB-58">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-59" type="radio" name="TAB29" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-59">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-60" type="radio" name="TAB29" class="tab-switch" /><label class="tab-label" for="TAB-60">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-61" type="radio" name="TAB30" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-61">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-62" type="radio" name="TAB30" class="tab-switch" /><label class="tab-label" for="TAB-62">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-63" type="radio" name="TAB31" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-63">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-64" type="radio" name="TAB31" class="tab-switch" /><label class="tab-label" for="TAB-64">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-65" type="radio" name="TAB32" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-65">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-66" type="radio" name="TAB32" class="tab-switch" /><label class="tab-label" for="TAB-66">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-67" type="radio" name="TAB33" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-67">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-68" type="radio" name="TAB33" class="tab-switch" /><label class="tab-label" for="TAB-68">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-69" type="radio" name="TAB34" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-69">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-70" type="radio" name="TAB34" class="tab-switch" /><label class="tab-label" for="TAB-70">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-71" type="radio" name="TAB35" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-71">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-72" type="radio" name="TAB35" class="tab-switch" /><label class="tab-label" for="TAB-72">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-73" type="radio" name="TAB36" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-73">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-74" type="radio" name="TAB36" class="tab-switch" /><label class="tab-label" for="TAB-74">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-75" type="radio" name="TAB37" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-75">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-76" type="radio" name="TAB37" class="tab-switch" /><label class="tab-label" for="TAB-76">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-77" type="radio" name="TAB38" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-77">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-78" type="radio" name="TAB38" class="tab-switch" /><label class="tab-label" for="TAB-78">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-79" type="radio" name="TAB39" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-79">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-80" type="radio" name="TAB39" class="tab-switch" /><label class="tab-label" for="TAB-80">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-81" type="radio" name="TAB40" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-81">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-82" type="radio" name="TAB40" class="tab-switch" /><label class="tab-label" for="TAB-82">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-83" type="radio" name="TAB41" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-83">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-84" type="radio" name="TAB41" class="tab-switch" /><label class="tab-label" for="TAB-84">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-85" type="radio" name="TAB42" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-85">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-86" type="radio" name="TAB42" class="tab-switch" /><label class="tab-label" for="TAB-86">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-87" type="radio" name="TAB43" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-87">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-88" type="radio" name="TAB43" class="tab-switch" /><label class="tab-label" for="TAB-88">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-89" type="radio" name="TAB44" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-89">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-90" type="radio" name="TAB44" class="tab-switch" /><label class="tab-label" for="TAB-90">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-91" type="radio" name="TAB45" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-91">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-92" type="radio" name="TAB45" class="tab-switch" /><label class="tab-label" for="TAB-92">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-93" type="radio" name="TAB46" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-93">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-94" type="radio" name="TAB46" class="tab-switch" /><label class="tab-label" for="TAB-94">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-95" type="radio" name="TAB47" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-95">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-96" type="radio" name="TAB47" class="tab-switch" /><label class="tab-label" for="TAB-96">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-97" type="radio" name="TAB48" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-97">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-98" type="radio" name="TAB48" class="tab-switch" /><label class="tab-label" for="TAB-98">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-99" type="radio" name="TAB49" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-99">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-100" type="radio" name="TAB49" class="tab-switch" /><label class="tab-label" for="TAB-100">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-101" type="radio" name="TAB50" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-101">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-102" type="radio" name="TAB50" class="tab-switch" /><label class="tab-label" for="TAB-102">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-103" type="radio" name="TAB51" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-103">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-104" type="radio" name="TAB51" class="tab-switch" /><label class="tab-label" for="TAB-104">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-105" type="radio" name="TAB52" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-105">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-106" type="radio" name="TAB52" class="tab-switch" /><label class="tab-label" for="TAB-106">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-107" type="radio" name="TAB53" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-107">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-108" type="radio" name="TAB53" class="tab-switch" /><label class="tab-label" for="TAB-108">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-109" type="radio" name="TAB54" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-109">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-110" type="radio" name="TAB54" class="tab-switch" /><label class="tab-label" for="TAB-110">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-111" type="radio" name="TAB55" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-111">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-112" type="radio" name="TAB55" class="tab-switch" /><label class="tab-label" for="TAB-112">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-113" type="radio" name="TAB56" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-113">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-114" type="radio" name="TAB56" class="tab-switch" /><label class="tab-label" for="TAB-114">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-115" type="radio" name="TAB57" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-115">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-116" type="radio" name="TAB57" class="tab-switch" /><label class="tab-label" for="TAB-116">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-117" type="radio" name="TAB58" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-117">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-118" type="radio" name="TAB58" class="tab-switch" /><label class="tab-label" for="TAB-118">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-119" type="radio" name="TAB59" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-119">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-120" type="radio" name="TAB59" class="tab-switch" /><label class="tab-label" for="TAB-120">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-121" type="radio" name="TAB60" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-121">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-122" type="radio" name="TAB60" class="tab-switch" /><label class="tab-label" for="TAB-122">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-123" type="radio" name="TAB61" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-123">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-124" type="radio" name="TAB61" class="tab-switch" /><label class="tab-label" for="TAB-124">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-125" type="radio" name="TAB62" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-125">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-126" type="radio" name="TAB62" class="tab-switch" /><label class="tab-label" for="TAB-126">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-127" type="radio" name="TAB63" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-127">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-128" type="radio" name="TAB63" class="tab-switch" /><label class="tab-label" for="TAB-128">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+
+<div class="tab-wrap">
+    <input id="TAB-129" type="radio" name="TAB64" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-129">英語</label>
+    <div class="tab-content">
+        コンテンツ 3
+    </div>
+    <input id="TAB-130" type="radio" name="TAB64" class="tab-switch" /><label class="tab-label" for="TAB-130">日本語</label>
+    <div class="tab-content">
+        コンテンツ 4
+    </div>
+</div>
+</form>
+<p>
+    <div style="margin-bottom:180px"></div>
+</p>
+
+<div id="page_top"><a href="#"></a></div>
