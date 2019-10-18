@@ -7,7 +7,13 @@ const urlsToCache = [
   'css/style.css',
   'js/jquery.min.js',
   'js/main.js',
-  'Unit6.html'
+  'index.html',
+  'Unit6.html',
+  'Unit7.html',
+  'Unit8.html',
+  'Unit9.html',
+  'Unit10.html',
+  'Unit11.html'
 ];
 
 self.addEventListener('install', (event) => {
