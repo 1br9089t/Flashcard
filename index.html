@@ -2,19 +2,23 @@
 <meta charset="utf-8">
 <title>英語1Bb 単語帳</title>
 <link rel="stylesheet" href="./css/style.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
 <link rel="apple-touch-icon" sizes="144x144" href="./icon-144.png" />
 <link rel="icon" href="./favicon.ico">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src=".js/jquery.min.js" charset="utf-8"></script>
 <script src="./js/main.js"></script>
 <link rel="manifest" href="./manifest.json">
+
 <script>
-  if('serviceWorker' in navigator) {
-    navigator.serviceWorker
-             .register('./js/sw.js"')
-             .then(function() { console.log("Service Worker Registered"); });
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').then(function(registration) {
+      // 登録成功
+      console.log('ServiceWorker の登録に成功しました。スコープ: ', registration.scope);
+    }).catch(function(err) {
+      // 登録失敗
+      console.log('ServiceWorker の登録に失敗しました。', err);
+    });
   }
-</script>
+  </script>
 
 <h1>英語1Bb 単語帳</h1>
 
