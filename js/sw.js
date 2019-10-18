@@ -1,18 +1,31 @@
-importScripts('/cache-polyfill.js');
+const version = "0.6.18";
+const cacheName = `airhorner-${version}`;
+self.addEventListener('install', e => {
+  e.waitUntil(
+    caches.open(cacheName).then(cache => {
+      return cache.addAll([
+        `/`,
+        `/index.html`,
+        `./css/style.css`,
+        `./js/main.js`,
+        `./js/sw.js`,
+        `Unit6.html`,
+      ])
+          .then(() => self.skipWaiting());
+    })
+  );
+});
 
+self.addEventListener('activate', event => {
+  event.waitUntil(self.clients.claim());
+});
 
-self.addEventListener('install', function(e) {
- e.waitUntil(
-   caches.open('airhorner').then(function(cache) {
-     return cache.addAll([
-       '/',
-       '/index.html',
-       '/index.html?homescreen=1',
-       '/?homescreen=1',
-       './css/style.css',
-       './js/main.js',
-       '/Unit6.html'
-     ]);
-   })
- );
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.open(cacheName)
+      .then(cache => cache.match(event.request, {ignoreSearch: true}))
+      .then(response => {
+      return response || fetch(event.request);
+    })
+  );
 });
