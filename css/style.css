@@ -242,7 +242,7 @@ h1:after {
     }
     .tab-label {
       color: lightgray;
-      background: #242424;
+      background: #323232;
       font-family: "Arial", "ヒラギノ角ゴ Pro W", "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic";
       font-weight: 800;
       font-size: 32px;
@@ -275,7 +275,7 @@ h1:after {
       overflow: auto;
       padding: 15px;
       opacity: 1;
-      background: #181818;
+      background: #242424;
       box-shadow: 0 0 4px rgba(0,0,0,.8);
       font-family: "Arial", "ヒラギノ角ゴ Pro W", "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic";
       font-weight: 500;
