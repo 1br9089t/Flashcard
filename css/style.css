@@ -175,7 +175,7 @@ h1:after {
 
 @media (prefers-color-scheme: dark) {
   body{
-    background-color:#000;
+    background-color:#101010;
     color: #fff;
   }
   h1 {
@@ -197,7 +197,7 @@ h1:after {
     top: -7px;
     border-width: 0 0 32px 32px;
     border-style: solid;
-    border-color: #000 #000 #a8f2ff;
+    border-color: #000 #000 darkturquoise;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
   
   }
@@ -242,7 +242,7 @@ h1:after {
     }
     .tab-label {
       color: lightgray;
-      background: #1e1e1e;
+      background: #242424;
       font-family: "Arial", "ヒラギノ角ゴ Pro W", "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic";
       font-weight: 800;
       font-size: 32px;
@@ -275,11 +275,12 @@ h1:after {
       overflow: auto;
       padding: 15px;
       opacity: 1;
-      box-shadow: 0 0 4px rgba(255,255,255,.8);
+      background: #181818;
+      box-shadow: 0 0 4px rgba(0,0,0,.8);
       font-family: "Arial", "ヒラギノ角ゴ Pro W", "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic";
       font-weight: 500;
       font-size: 48px;
-      color: #ffffff;
+      color: lightgray;
     }
     /* ラジオボタン非表示 */
     .tab-switch {
