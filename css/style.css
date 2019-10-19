@@ -174,13 +174,17 @@ h1:after {
 }
 
 @media (prefers-color-scheme: dark) {
+  body{
+    background-color:#000;
+    color: #fff;
+  }
   h1 {
     position: relative;
-    background: darkturquoise;
-    box-shadow: 0px 0px 0px 5px darkturquoise;
+    background: teal;
+    box-shadow: 0px 0px 0px 5px teal;
     border: dashed 2px black;
     padding: 0.8em 0.8em;
-    color: black;
+    color: white;
     text-align: center;
     font-family: "Arial";
     font-size: 48px;
@@ -203,8 +207,8 @@ h1:after {
     display: block;
     padding: 0em 1em;
     text-decoration: none;
-    color: darkturquoise;
-    border: solid 2px darkturquoise;
+    color: lightgray;
+    border: solid 2px teal;
     border-radius: 3px;
     transition: .2s;
     margin: 32px;
@@ -216,7 +220,7 @@ h1:after {
   }
   
   .btn-flat-border:hover {
-    background: darkturquoise;
+    background: teal;
     color: black;
   }
   
@@ -231,13 +235,13 @@ h1:after {
       content: '';
       width: 100%;
       height: 3px;
-      background: darkturquoise;
+      background: teal;
       display: block;
       order: -1;
       padding-right: 32px;
     }
     .tab-label {
-      color: black;
+      color: lightgray;
       background: #1e1e1e;
       font-family: "Arial", "ヒラギノ角ゴ Pro W", "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic";
       font-weight: 800;
@@ -264,18 +268,18 @@ h1:after {
     }
     /* アクティブなタブ */
     .tab-switch:checked+.tab-label {
-      background: darkturquoise;
+      background: teal;
     }
     .tab-switch:checked+.tab-label+.tab-content {
       height: auto;
       overflow: auto;
       padding: 15px;
       opacity: 1;
-      box-shadow: 0 0 16px rgba(0,0,0,.2);
+      box-shadow: 0 0 4px rgba(255,255,255,.8);
       font-family: "Arial", "ヒラギノ角ゴ Pro W", "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic";
       font-weight: 500;
       font-size: 48px;
-      color: #606060;
+      color: #ffffff;
     }
     /* ラジオボタン非表示 */
     .tab-switch {
@@ -287,7 +291,7 @@ h1:after {
       position: fixed;
       right: 0;
       bottom: 0;
-      background: darkturquoise;
+      background: teal;
       opacity: 0.6;
       border-radius: 50%;
       z-index: 2
@@ -330,9 +334,9 @@ h1:after {
   .btn-open {
     display: inline-block;
     max-width: 200px;
-    border: 2px solid darkturquoise;
+    border: 2px solid teal;
     font-size: 48px;
-    color: darkturquoise;
+    color: lightgray;
     text-decoration: none;
     line-height: 88px;
     font-weight: bold;
@@ -344,8 +348,8 @@ h1:after {
   }
   
   .btn-open:hover {
-    background-color: darkturquoise;
-    border-color: darkturquoise;
+    background-color: teal;
+    border-color: teal;
     color: #000F;
   }
 }
