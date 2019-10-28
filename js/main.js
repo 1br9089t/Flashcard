@@ -30,3 +30,32 @@ jQuery(function() {
        document.sample.elements[i].checked = true;
     }
  }
+
+ (function($){
+  $(function() {
+
+      var rBox = [];
+      $('.tab-wrap').each(function() {
+          rBox.push($(this).html());
+      });
+      rBox.sort(function() {
+          return Math.random() - Math.random();
+      });
+      $('.tab-wrap').empty();
+       
+      i = 0;
+      $('.tab-wrap').each(function() {
+          $(this).append(rBox[i]);
+          i++;
+      });
+
+  });
+})(jQuery);
+
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
