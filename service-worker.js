@@ -8,3 +8,19 @@ self.addEventListener('install', function(e) {
   });
   
   self.addEventListener('fetch', function(event) {});
+
+  self.addEventListener('activate', event => {
+    event.waitUntil(
+      caches.keys().then(keys => {
+        console.log('keys: ' + keys)
+        return Promise.all(
+          keys.map(key => {
+            console.log('不要なキャッシュを削除')
+            return caches.delete(key)
+          })
+        )
+      })
+    )
+  })
+  
+  window.location.reload(true);

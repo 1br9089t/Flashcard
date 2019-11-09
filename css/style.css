@@ -140,10 +140,10 @@ h1:after {
     text-align: center;
   }
 
-  .Container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 150px 150px 150px;
+.Container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px 150px 150px;
 }
 
 .Container {
@@ -151,6 +151,7 @@ h1:after {
   text-align: center;
   padding: 40px;
 }
+
 .btn-open {
   display: inline-block;
   max-width: 200px;
