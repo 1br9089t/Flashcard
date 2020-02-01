@@ -191,7 +191,7 @@ h1:after {
 
 @media (prefers-color-scheme: dark) {
   body{
-    background-color:#101010;
+    background-color:#000000;
     color: #fff;
   }
   h1 {
